@@ -23,10 +23,15 @@ To install Project Title, follow these steps:
 2. Navigate to the project directory
 3. Install dependencies: **pipenv install**
 4. activate virtual env :  **pipenv shell**
-5. create a mysql database called storefront3
-6. migration in the project --> 1:**python manage.py makemigrations**, 2:**python manage.py migrate**
-7. create some fake data if you want(you can use the *sead.db* in the project) for better undrestanding of the API
-8. Start the project: **python manage.py runserver**
+5. create a mysql database with your favourite mysqlclient(DataGrip is the best)
+6. create a .env file for your project.
+7. go to (https://djecrety.ir/) and generate a fake django secret key and place it in the .env file
+8. you should place other informations about debug and your database(name,user,host,password) on the .env file.
+9. **at last your .env file should look something like the .env_example.so check it out**
+10. migration in the project --> 1:**python manage.py makemigrations**, 2:**python manage.py migrate**
+11. create some fake data if you want for better undrestanding of the API.this command create some dummydata and operations for you:**python manage.py seed_db**
+12. create a superuser for the project--> **python manage.py createsuperuser**
+13. Start the project: **python manage.py runserver**
 
 ## **Usage**
 
